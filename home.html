@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descrição breve do site para SEO (máximo 160 caracteres)">
+  <meta name="keywords" content="palavras-chave, relacionadas, ao negócio">
+  <meta name="author" content="Nome da dupla">
+  <title>Crepe do Lula | Início</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div id='header'></div>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+    <button id="btnTopo" class="btn-topo" aria-label="Voltar ao topo">↑</button>
+    <main id="conteudo-principal">
+    <div class="home-container">
+       
+        <div class="home-waves-top"></div>
+
+    
+        <div class="home-content">
+         
+            <div class="home-logo">
+                <h1>CREPE DO LULA</h1>
+            </div>
+
+         
+            <div class="home-buttons">
+                <a href="index.html" class="home-btn">Cardápio</a>
+                <a href="eventos.html" class="home-btn">Contratar para eventos</a>
+                <a href="contato.html" class="home-btn">Fazer pedido</a> 
+            </div>
+
+          
+            <div class="home-contact">
+                <a href="https://instagram.com/crepedolula_" target="_blank" class="home-contact-item">
+                    <span class="home-icon instagram">📷</span>
+                    <span>@crepedolula_</span>
+                </a>
+                
+                <a href="https://wa.me/5561998824792" target="_blank" class="home-contact-item">
+                    <span class="home-icon whatsapp">📱</span>
+                    <span>(61) 99882-4792</span>
+                </a>
+            </div>
+        </div>
+        <div class="home-waves-bottom"></div>
+    </div>
+    </main>
+    
+
+
+<script src="js/main.js"></script>
+
+
+<script src="js/home.js"></script>
+<div id='footer'></div>
+
+<script>
+fetch('componentes/header.html').then(r=>r.text()).then(t=>{document.getElementById('header').innerHTML=t});
+fetch('componentes/footer.html').then(r=>r.text()).then(t=>{document.getElementById('footer').innerHTML=t});
+</script>
+<script src="js/home.js"></script>
+</body>
+</html>
